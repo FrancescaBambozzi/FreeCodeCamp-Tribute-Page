@@ -1,0 +1,131 @@
+body {
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* LAYOUT */
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background-color: #111;
+    background-image: url('img/3385811-HZDZXPXX-7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.right {
+    right: 0;
+    background-color: #e50000;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* TITLE STYLE */
+
+.ml5 {
+    position: relative;
+    font-weight: 300;
+    font-size: 4.5em;
+    color: #402d2d;
+}
+
+.ml5 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 0.8em;
+}
+
+.ml5 .line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 3px;
+    width: 100%;
+    background-color: #402d2d;
+    transform-origin: 0.5 0;
+}
+
+.ml5 .letters {
+    display: inline-block;
+    opacity: 0;
+}
+
+/* BUTTON STYLE */
+
+a {
+    text-decoration: none;
+    color: #402d2d;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-family: sans-serif;
+}
+
+.button {
+    position: relative;
+    top: 180px;
+    padding: 1em 1.5em;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    margin: 1em 0.8em
+}
+
+.buttonEffect::after, .buttonEffect::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    border: 2.5px solid;
+    transition: all 0.6s ease;
+    border-radius: 2px;
+}
+
+.buttonEffect::after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #402d2d;
+    border-right-color: #402d2d;
+}
+
+.buttonEffect::before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #402d2d;
+    border-left-color: #402d2d;
+}
+
+.buttonEffect:hover:after, .buttonEffect:hover:before {
+    border-bottom-color: #402d2d;
+    border-right-color: #402d2d;
+    border-top-color: #402d2d;
+    border-left-color: #402d2d;
+    width: 100%;
+    height: 100%;
+}
