@@ -42,7 +42,7 @@ body {
     position: relative;
     font-weight: 300;
     font-size: 4.5em;
-    color: #402d2d;
+    color: #171616;
 }
 
 .ml5 .text-wrapper {
@@ -62,7 +62,7 @@ body {
     margin: auto;
     height: 3px;
     width: 100%;
-    background-color: #402d2d;
+    background-color: #171616;
     transform-origin: 0.5 0;
 }
 
@@ -75,10 +75,11 @@ body {
 
 a {
     text-decoration: none;
-    color: #402d2d;
+    color: #171616;
     text-transform: uppercase;
     font-size: 0.8em;
     font-family: sans-serif;
+    font-weight: 800;
 }
 
 .button {
@@ -108,8 +109,8 @@ a {
     right: 0;
     border-top-color: transparent;
     border-left-color: transparent;
-    border-bottom-color: #402d2d;
-    border-right-color: #402d2d;
+    border-bottom-color: #171616;
+    border-right-color: #171616;
 }
 
 .buttonEffect::before {
@@ -117,15 +118,73 @@ a {
     left: 0;
     border-bottom-color: transparent;
     border-right-color: transparent;
-    border-top-color: #402d2d;
-    border-left-color: #402d2d;
+    border-top-color: #171616;
+    border-left-color: #171616;
 }
 
 .buttonEffect:hover:after, .buttonEffect:hover:before {
-    border-bottom-color: #402d2d;
-    border-right-color: #402d2d;
-    border-top-color: #402d2d;
-    border-left-color: #402d2d;
+    border-bottom-color: #171616;
+    border-right-color: #171616;
+    border-top-color: #171616;
+    border-left-color: #171616;
     width: 100%;
     height: 100%;
+}
+
+
+/* For mobile : like samsung grand(480 * 800): */
+@media screen and (max-width : 480px) {
+    .split {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+        background-image: url('img/3385811-HZDZXPXX-7.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .button {
+        position: relative;
+        top: 100px;
+    }
+}
+
+
+/* For iphone: */
+@media screen and (max-width : 320px) {
+    .split {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+        background-image: url('img/3385811-HZDZXPXX-7.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+
+/* For ipad: */
+@media screen and (max-width : 768px) {
+    .split {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+        background-image: url('img/3385811-HZDZXPXX-7.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+   
 }
