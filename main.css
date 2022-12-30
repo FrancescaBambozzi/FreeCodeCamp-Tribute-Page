@@ -1,9 +1,9 @@
+/* LANDING PAGE */
+/* Layout */
 body {
     margin: 0 auto;
     padding: 15px;
 }
-
-/* LAYOUT */
 
 .split {
     height: 100%;
@@ -36,16 +36,15 @@ body {
     text-align: center;
 }
 
-/* TITLE STYLE */
-
-.ml5 {
+/* Title Style */
+#title {
     position: relative;
     font-weight: 300;
     font-size: 4.5em;
     color: #171616;
 }
 
-.ml5 .text-wrapper {
+#title .text-wrapper {
     position: relative;
     display: inline-block;
     padding-top: 0.1em;
@@ -54,7 +53,7 @@ body {
     line-height: 0.8em;
 }
 
-.ml5 .line {
+#title .line {
     position: absolute;
     left: 0;
     top: 0;
@@ -66,14 +65,17 @@ body {
     transform-origin: 0.5 0;
 }
 
-.ml5 .letters {
+#title .letters-left {
+    margin-top: 20px;
+}
+
+#title .letters {
     display: inline-block;
     opacity: 0;
 }
 
-/* BUTTON STYLE */
-
-a {
+/* Button Style */
+#discoverLink {
     text-decoration: none;
     color: #171616;
     text-transform: uppercase;
@@ -131,9 +133,45 @@ a {
     height: 100%;
 }
 
+/* ABOUT PAGE */
+/* Layout */
+#aboutBody {
+    padding: 0;
+}
 
-/* For mobile : like samsung grand(480 * 800): */
+#mainContent {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.column {
+    width: 50%;
+    padding: 50px;
+}
+
+/* Elements style */
+#img {
+    width: 100%;
+}
+
+#header {
+    height: 50px;
+    background-color: #e50000;
+    width: 100%;
+}
+
+#navBackButton {
+    color: #171616;
+    margin: 25px 30px 10px 10px;
+}
+
+/* Mobile Layout */
 @media screen and (max-width : 480px) {
+
+    /* LANDING PAGE */
     .split {
         height: 100%;
         width: 100%;
@@ -147,44 +185,78 @@ a {
         background-repeat: no-repeat;
     }
 
+    /* Title Style */
+    #title {
+        color: white;
+    }
+
+    #title .line {
+        background-color: white;
+    }
+
+    .buttonEffect::after {
+        border-bottom-color: white;
+        border-right-color: white;
+    }
+
+    .buttonEffect::before {
+        border-top-color: white;
+        border-left-color: white;
+    }
+
+    .buttonEffect:hover:after, .buttonEffect:hover:before {
+        border-bottom-color: white;
+        border-right-color: white;
+        border-top-color: white;
+        border-left-color: white;
+    }
+
+    /* Button Style */
     .button {
         position: relative;
         top: 100px;
     }
-}
 
+    #discoverLink {
+        color: white;
+    }
 
-/* For iphone: */
-@media screen and (max-width : 320px) {
-    .split {
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        overflow-x: hidden;
-        padding-top: 20px;
-        background-image: url('img/3385811-HZDZXPXX-7.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+    /* ABOUT PAGE */
+    /* Layout */
+    #mainContent {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .column {
+        width: 90%;
+        padding: 10px;
     }
 }
 
+/* Tablets Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
 
-/* For ipad: */
-@media screen and (max-width : 768px) {
-    .split {
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        overflow-x: hidden;
-        padding-top: 20px;
-        background-image: url('img/3385811-HZDZXPXX-7.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
+    /* LANDING PAGE */
+    .button {
+        position: relative;
+        top: 50px;
     }
 
-   
+    /* ABOUT PAGE */
+    #mainContent {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .column {
+        width: 90%;
+        padding: 10px;
+    }
 }

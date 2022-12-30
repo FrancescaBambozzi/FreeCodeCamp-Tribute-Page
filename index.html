@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
-    <link rel="stylesheet" href="main.css">
-    <link rel="icon" type="image/png" href="img/paint-icon.png">
-    <title>Tribute</title>
-</head>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" type="image/png" href="img/paint-icon.png" />
+    <title>Fan Page</title>
+  </head>
 
-<body>
+  <body>
     <main id="main">
+      <div id="img-div" class="split left"></div>
 
-        <div id="img-div" class="split left">
+      <div id="tribute-info" class="split right">
+        <div class="centered">
+          <h1 id="title">
+            <span class="text-wrapper">
+              <span class="line line1"></span>
+              <span class="letters letters-left">Salvador</span>
+              <span class="letters letters-right">Dalí</span>
+              <span class="line line2"></span>
+            </span>
+          </h1>
+
+          <a id="discoverLink" class="button buttonEffect" href="about.html">Discover More</a>
         </div>
-
-        <div id="tribute-info" class="split right">
-
-            <div class="centered">
-                <h1 id="title" class="ml5">
-                    <span class="text-wrapper">
-                        <span class="line line1"></span>
-                        <span class="letters letters-left">Salvador</span>
-                        <span class="letters letters-right">Dalí</span>
-                        <span class="line line2"></span>
-                    </span>
-                </h1>
-
-                <a class="button buttonEffect" id="tribute-link" href="https://en.wikipedia.org/wiki/Salvador_Dal%C3%AD"
-                    target="_blank">Discover More</a>
-
-            </div>
-        </div>
-
+      </div>
     </main>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
